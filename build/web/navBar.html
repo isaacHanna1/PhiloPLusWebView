@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/frameWork.css" />
+        <link rel="stylesheet" href="style/normalize.css" />
+        <link rel="stylesheet" href="style/master.css" />
+        
+        <style>
+            ul.menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:20px;
+                padding: 15px;
+                background-color: #eee;
+                box-shadow: 1px 1px 1px #ddd;
+            }
+            ul.menu li a{
+                font-size: 18px;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-weight: bold;
+                color:#000;
+            }
+            ul.menu li a:hover{
+                color:#10cab7;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <ul class="menu">
+              <li><a href="GetLiftTypeCompanyName">create</a></li>
+                <li><a href="showAllLifts.jsp?startRecord=0&endRecord=10">Show </a></li>
+              <li><a href="followingLiftNumber.jsp">Following</a></li>
+              <li><a href="followingReport.jsp">report</a></li>
+            </ul>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/frameWork.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/master.css" />
+
+    <style>
+      
+         .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        .container h2{
+        margin-bottom: 20px;
+         }
+        .loginForm{
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 50px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px #ddd;
+        }
+        .loginForm .row{
+            padding: 10px;
+            
+        }
+        .loginForm .row label{
+            display: inline-block;
+            width: 150px;
+            font-size: 15px;
+            font-weight: bold;        
+            margin-bottom: 10px;
+        }
+        .loginForm .row:not(:last-child) input{
+            padding: 12px;
+            font-size: 14px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .loginForm .row:last-child input{
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1pxr;
+            width: 120px;
+            background-color:#0075ff;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            color: #fff;
+            width: 150px;
+        }
+
+    </style>
+
+    <title>Philo login</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        
+        <form class="loginForm" action ="login.jsp">
+            <h2>Philo login</h2>
+            <div class="row">
+                <label>User Name :</label>
+                <input type="text" placeholder="user Name" name ="userName">
+            </div>
+            <div class="row">
+                <label>User Password :</label>
+                <input type="password" placeholder="user Password" name="passsword">
+            </div>
+            <div class="row">
+                <input type="submit" value="login">
+            </div>
+        </form>
+
+    </div>
+
+  </body>
+</html>

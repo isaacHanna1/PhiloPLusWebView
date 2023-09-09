@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GetLiftTypeCompanyName</servlet-name>
+        <servlet-class>com.watad.philoPLus.classes.GetLiftTypeCompanyName</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddNewFollowingServlet</servlet-name>
+        <servlet-class>com.watad.philoPLus.classes.AddNewFollowingServlet</servlet-class>
+        <multipart-config>
+            <max-file-size>52428800</max-file-size>
+            <max-request-size>52428800</max-request-size>
+            <file-size-threshold>0</file-size-threshold>
+        </multipart-config>
+    </servlet>
+    <servlet>
+        <servlet-name>downloadImg</servlet-name>
+        <servlet-class>com.watad.philoPLus.classes.downloadImg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetLiftTypeCompanyName</servlet-name>
+        <url-pattern>/GetLiftTypeCompanyName</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddNewFollowingServlet</servlet-name>
+        <url-pattern>/AddNewFollowingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>downloadImg</servlet-name>
+        <url-pattern>/downloadImg</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>Jersy servlet </servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.watad.philoPLus.classes</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersy servlet </servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>Cros</filter-name>
+        <filter-class>com.watad.philoPLus.classes.CORSResponseFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Cros</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

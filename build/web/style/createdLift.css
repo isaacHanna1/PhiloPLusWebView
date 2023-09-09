@@ -1,0 +1,119 @@
+.container h1 {
+  background-color: #0075ff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+@media (max-width:768px){
+    .container h1 {
+      font-size: 14px;
+    }
+}
+.createLift {
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 1px #ddd;
+  margin: 30px;
+  direction :rtl;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.create_row {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.create_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.create_row .col {
+  flex-grow: 1;
+  margin: 10px;
+}
+@media (max-width: 767px) {
+  .create_row .col {
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .create_row {
+    text-align: center;
+  }
+}
+.create_row label {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+    .create_row label {
+        width: 100%
+    }    
+}
+.createLift input {
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 320px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.create_row select {
+  width: 320px;
+  padding: 15px;
+  font-size: 15px
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .create_row input,
+  .create_row select {
+    width: 100%;
+    margin: 2px;
+  }
+}
+form .message {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0075ff;
+}
+form .messageError {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+}
+form input[type="submit"] {
+  display: block;
+  margin: 15px auto;
+}
+@media (max-width: 767px) {
+  form input[type="submit"] {
+    width: 80%;
+  }
+}
